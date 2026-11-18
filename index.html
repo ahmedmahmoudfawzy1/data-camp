@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BPO Data Analysis Bootcamp | EraaSoft</title>
+  <meta name="description" content="BPO Data Analysis Bootcamp من EraaSoft: من Data Analyst لـ BPO Domain Specialist. مشروع عملي على 18 مليون Row." />
+  <link rel="icon" href="assets/eraasoft-logo.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" aria-label="EraaSoft">
+        <img src="assets/eraasoft-logo.webp" alt="EraaSoft" />
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#why">ليه BPO؟</a>
+        <a href="#curriculum">المنهج</a>
+        <a href="#instructor">المحاضر</a>
+        <a href="#outcomes">المخرجات</a>
+        <a href="#audience">مين يقدر ينضم؟</a>
+      </nav>
+      <a href="#register" class="btn btn--primary btn--sm nav__cta" data-open-register>سجل دلوقتي</a>
+      <button class="nav__toggle" id="navToggle" aria-label="القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow reveal"><span class="dot"></span> Bootcamp جديد لخريجي دبلومة Data Analysis</span>
+          <h1 class="hero__title reveal" data-delay="1">
+            <span class="en">BPO Data Analysis</span>
+            <span class="en hero__title-accent">Bootcamp</span>
+          </h1>
+          <p class="hero__subtitle en reveal" data-delay="2">From Data Analyst to <strong>BPO Domain Specialist</strong></p>
+          <p class="hero__lead reveal" data-delay="3">
+            خلصت كورس Data Analysis وبقيت بتعرف تشتغل على الـ Analysis Tools؟
+            الخطوة الجاية إنك تفهم الـ Business نفسه. اتعلم إزاي تحلل KPIs حقيقية جوه شركات الـ BPO،
+            وطبّق كل ده على مشروع ضخم بحجم <strong>18 Million Rows</strong>.
+          </p>
+          <div class="hero__actions reveal" data-delay="4">
+            <a href="#register" class="btn btn--primary btn--lg" data-open-register>
+              سجل في الـ Bootcamp
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#curriculum" class="btn btn--ghost btn--lg">شوف المنهج</a>
+          </div>
+
+          <div class="free-badge reveal" data-delay="4">
+            <span class="free-badge__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 110-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 100-5C13 2 12 7 12 7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span>الـ <span class="en">Bootcamp</span> <b>مجاني 100%</b> لجميع طلاب <span class="en">EraaSoft</span></span>
+            <s class="en">3,000 EGP</s>
+          </div>
+
+          <ul class="hero__stats reveal" data-delay="5">
+            <li><b class="en"><span class="counter" data-target="18">0</span>M</b><span>Rows في المشروع</span></li>
+            <li><b class="en"><span class="counter" data-target="8">0</span></b><span>Departments KPIs</span></li>
+            <li><b class="en"><span class="counter" data-target="4">0</span></b><span>Career Roles</span></li>
+          </ul>
+        </div>
+
+        <!-- Dashboard mock -->
+        <div class="hero__visual reveal" data-delay="3" aria-hidden="true">
+          <div class="dash">
+            <div class="dash__top">
+              <span class="dash__dots"><i></i><i></i><i></i></span>
+              <span class="dash__title en">Contact Center · Live KPIs</span>
+            </div>
+            <div class="dash__kpis en">
+              <div class="kpi"><small>Service Level</small><b>82.4%</b><em>▲ 3.1</em></div>
+              <div class="kpi"><small>AHT</small><b>4:12</b><em>▼ 0:18</em></div>
+              <div class="kpi"><small>CSAT</small><b>91%</b><em>▲ 2.4</em></div>
+            </div>
+            <div class="dash__chart">
+              <svg viewBox="0 0 320 120" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="area" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#2f7ff5" stop-opacity=".45"/>
+                    <stop offset="100%" stop-color="#2f7ff5" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path class="dash__area" d="M0,95 C30,88 45,70 75,72 C105,74 115,50 145,48 C175,46 185,62 215,55 C245,48 260,25 290,22 L320,18 L320,120 L0,120 Z" fill="url(#area)"/>
+                <path class="dash__line" d="M0,95 C30,88 45,70 75,72 C105,74 115,50 145,48 C175,46 185,62 215,55 C245,48 260,25 290,22 L320,18" fill="none" stroke="#2f7ff5" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="dash__bars">
+              <div class="bar" style="--h:55%"></div><div class="bar" style="--h:72%"></div>
+              <div class="bar" style="--h:48%"></div><div class="bar" style="--h:86%"></div>
+              <div class="bar" style="--h:64%"></div><div class="bar" style="--h:92%"></div>
+              <div class="bar" style="--h:70%"></div>
+            </div>
+          </div>
+          <div class="float-card float-card--a en">
+            <span class="ic">⚡</span>
+            <div><small>Agents Required</small><b>126</b></div>
+          </div>
+          <div class="float-card float-card--b en">
+            <span class="ic ic--amber">✓</span>
+            <div><small>SLA Target</small><b>80/20 Met</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Tools marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track en">
+        <span>SQL</span><span>Power BI</span><span>Data Modeling</span><span>Excel</span><span>KPIs</span><span>Workforce Management</span><span>SLA</span><span>Erlang C</span><span>Quality Analysis</span><span>AI for Analysis</span>
+        <span>SQL</span><span>Power BI</span><span>Data Modeling</span><span>Excel</span><span>KPIs</span><span>Workforce Management</span><span>SLA</span><span>Erlang C</span><span>Quality Analysis</span><span>AI for Analysis</span>
+      </div>
+    </div>
+
+    <!-- ===== Questions ===== -->
+    <section class="section questions">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="tag">السؤال اللي في دماغك</span>
+          <h2>أكيد سألت نفسك قبل كده...</h2>
+        </div>
+        <div class="q-grid">
+          <article class="q-card reveal" data-delay="1">
+            <span class="q-card__num en">01</span>
+            <p>إزاي أقدر أستخدم كل اللي اتعلمته في مجال حقيقي؟</p>
+          </article>
+          <article class="q-card reveal" data-delay="2">
+            <span class="q-card__num en">02</span>
+            <p>إزاي أفهم طبيعة شغل الشركات، وأعرف إيه الـ KPIs اللي محتاج أحللها، وإيه المطلوب مني كـ Data Analyst في كل Domain؟</p>
+          </article>
+          <article class="q-card reveal" data-delay="3">
+            <span class="q-card__num en">03</span>
+            <p>إزاي أنقل نفسي من شخص بيعرف يستخدم أدوات التحليل، لشخص فاهم الـ Business ويقدم حلول مبنية على الأرقام؟</p>
+          </article>
+        </div>
+
+        <div class="answer reveal">
+          <div class="answer__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 2l2.6 6.3L21 9l-5 4.4L17.5 20 12 16.6 6.5 20 8 13.4 3 9l6.4-.7z" fill="currentColor"/></svg>
+          </div>
+          <div>
+            <h3>وهنا بتظهر أهمية الـ <span class="en">Domain Knowledge</span></h3>
+            <p>علشان كده في EraaSoft بنقدم لك <b class="en">BPO Data Analysis Bootcamp</b>: تجربة عملية متخصصة هتساعدك تفهم واحد من أهم الـ Business Domains اللي بتعتمد على تحليل البيانات، وتعرف طبيعة الشغل فيه، والوظائف المتاحة، والمهارات المطلوبة علشان تبدأ طريقك المهني.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why BPO ===== -->
+    <section class="section why" id="why">
+      <div class="container why__inner">
+        <div class="why__text">
+          <span class="tag reveal">ليه اخترنا الـ BPO؟</span>
+          <h2 class="reveal" data-delay="1">مجال قايم على <span class="hl">الأرقام</span> وبيقدّر الـ Analysts</h2>
+          <p class="reveal" data-delay="2">الـ <span class="en">Business Process Outsourcing</span> من المجالات اللي بتعتمد بشكل كبير على البيانات وتحليل الأداء واتخاذ القرارات المبنية على الأرقام، والمرتبات فيها لقسم تحليل البيانات بتكون أفضل من شركات كتير.</p>
+          <p class="reveal" data-delay="3">شركات الـ BPO بتتعامل مع حجم ضخم من العمليات والمكالمات والعملاء، وده بيخلق احتياج مستمر لمتابعة الأداء وتحليل البيانات وتحسين كفاءة التشغيل.</p>
+          <p class="reveal" data-delay="4">في الـ Bootcamp مش هتتعلم المجال من بره بس. هتفهم الشركات بتشتغل إزاي من جوه، وإيه دور الـ Data Analyst في كل جزء منها.</p>
+        </div>
+
+        <div class="roles">
+          <p class="roles__label reveal">وده بيفتح لك فرص في أدوار زي:</p>
+          <div class="role reveal" data-delay="1">
+            <span class="role__ic">
+              <svg viewBox="0 0 24 24"><path d="M4 19V9m6 10V5m6 14v-7m4 7H2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <div><h4 class="en">MIS Analyst</h4><p>تقارير ومؤشرات الإدارة وأنظمة المعلومات</p></div>
+          </div>
+          <div class="role reveal" data-delay="2">
+            <span class="role__ic">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <div><h4 class="en">WFM Analyst</h4><p>التخطيط والـ Forecasting وجدولة الـ Agents</p></div>
+          </div>
+          <div class="role reveal" data-delay="3">
+            <span class="role__ic">
+              <svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <div><h4 class="en">Quality Analyst</h4><p>جودة الخدمة ورضا العملاء وتقييم الأداء</p></div>
+          </div>
+          <div class="role reveal" data-delay="4">
+            <span class="role__ic">
+              <svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div><h4 class="en">Operations Analyst</h4><p>كفاءة التشغيل وأداء الفرق والعمليات</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Curriculum ===== -->
+    <section class="section curriculum" id="curriculum">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="tag">المنهج</span>
+          <h2>هتتعلم إيه في الـ <span class="en">Bootcamp</span>؟</h2>
+          <p>رحلة من 5 مراحل: من فهم الـ Business لحد ما تقدم Recommendations مبنية على الداتا.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="module reveal">
+            <div class="module__marker en">01</div>
+            <div class="module__card">
+              <div class="module__head">
+                <h3 class="en">Understand the BPO Industry</h3>
+                <span class="module__badge en">Foundation</span>
+              </div>
+              <p class="module__intro">قبل ما تبدأ تحلل أي بيانات، لازم تفهم الـ Business اللي بتشتغل عليه.</p>
+              <ul class="checklist">
+                <li>يعني إيه BPO و Business Process Outsourcing؟</li>
+                <li>إزاي شركات الـ BPO بتشتغل؟</li>
+                <li>إيه الأقسام والـ Departments الموجودة داخل الشركات؟</li>
+                <li>إيه دور Operations و WFM و Quality و MIS؟</li>
+                <li>إيه أهم الشركات اللي بتوظف في المجال؟</li>
+                <li>إيه الوظائف المتاحة والمهارات المطلوبة لكل وظيفة؟</li>
+                <li>إزاي تبدأ طريقك المهني بعد الدبلومة؟</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="module reveal">
+            <div class="module__marker en">02</div>
+            <div class="module__card">
+              <div class="module__head">
+                <h3 class="en">Understand Business KPIs</h3>
+                <span class="module__badge en">Business</span>
+              </div>
+              <p class="module__intro">هتتعرف على أهم مؤشرات الأداء اللي الشركات بتعتمد عليها في متابعة شغلها، وإزاي تحسبها وتحللها. هنتناول KPIs الخاصة بـ:</p>
+              <div class="chips en">
+                <span>Operations</span><span>Workforce Management</span><span>Quality</span><span>Training</span>
+                <span>HR</span><span>IT</span><span>MIS &amp; Reporting</span><span>Recruitment</span>
+              </div>
+              <p>وهتفهم إزاي الشركات بتتابع أداء الموظفين، ورضا العملاء، وجودة الخدمة، وكفاءة التشغيل.</p>
+              <div class="callout">
+                <b>كمان:</b> هتتعلم إزاي يتم حساب عدد الـ Agents المطلوبين لتغطية حجم المكالمات وتحقيق الـ <span class="en">Service Level Agreement (SLA)</span>.
+              </div>
+            </div>
+          </li>
+
+          <li class="module reveal">
+            <div class="module__marker en">03</div>
+            <div class="module__card">
+              <div class="module__head">
+                <h3 class="en">Real Business Case – Part 1</h3>
+                <span class="module__badge module__badge--amber en">Hands-on</span>
+              </div>
+              <p class="module__intro">هنا هننقل المعرفة للتطبيق العملي. هتشتغل على مشروع حقيقي مبني على Dataset ضخمة بحجم يقارب <b class="en">18 Million Rows</b>، وهنمشي مع بعض في مراحل تجهيز البيانات:</p>
+              <div class="pipeline en">
+                <span>Data Extraction</span><i>›</i>
+                <span>SQL Queries</span><i>›</i>
+                <span>Data Cleaning &amp; Transformation</span><i>›</i>
+                <span>Data Modeling</span><i>›</i>
+                <span>Preparing Data for Analysis</span>
+              </div>
+              <p>مش مجرد تطبيق على بيانات صغيرة. دي تجربة عملية تتعامل فيها مع حجم بيانات كبير وتتعلم إزاي تديرها وتحضرها للتحليل.</p>
+            </div>
+          </li>
+
+          <li class="module reveal">
+            <div class="module__marker en">04</div>
+            <div class="module__card">
+              <div class="module__head">
+                <h3 class="en">Real Business Case – Part 2</h3>
+                <span class="module__badge module__badge--amber en">Hands-on</span>
+              </div>
+              <p class="module__intro">بعد تجهيز البيانات، هنبدأ نستخرج منها المعلومات اللي الشركات محتاجاها فعلاً.</p>
+              <div class="chips en">
+                <span>Calculate Business KPIs</span><span>Analyze Operational Performance</span>
+                <span>Workforce &amp; Quality Analysis</span><span>Build Interactive Power BI Dashboard</span>
+                <span>Extract Business Insights</span><span>Present Data-Driven Recommendations</span>
+              </div>
+              <p>وفي النهاية هتكون اشتغلت على مشروع متكامل تقدر تضيفه للـ Portfolio بتاعك وتناقشه في مقابلات العمل.</p>
+            </div>
+          </li>
+
+          <li class="module reveal">
+            <div class="module__marker en">05</div>
+            <div class="module__card">
+              <div class="module__head">
+                <h3 class="en">AI for Data Analysis</h3>
+                <span class="module__badge module__badge--ai en">AI</span>
+              </div>
+              <p class="module__intro">الـ AI بقى جزء مهم من شغل الـ Data Analyst، وعلشان كده هنخصص Session تتعلم فيها إزاي تستفيد منه في شغلك.</p>
+              <ul class="checklist checklist--2col">
+                <li>استخدام AI في كتابة SQL Queries</li>
+                <li>تحليل البيانات واكتشاف الأنماط</li>
+                <li>استخراج Insights من البيانات</li>
+                <li>تسريع إعداد التقارير والـ Dashboards</li>
+                <li>استخدام AI في حل مشكلات تحليل البيانات</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Instructor ===== -->
+    <section class="section instructor" id="instructor">
+      <div class="instructor__bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head section__head--light reveal">
+          <span class="tag tag--light">هتتعلم من شخص من قلب المجال</span>
+          <h2>تعرّف على المحاضر</h2>
+        </div>
+
+        <div class="instructor__card">
+          <div class="instructor__photo reveal">
+            <div class="instructor__frame">
+              <img src="assets/instructor.jpg" alt="Eng. Mohamed Elalfy" loading="lazy" />
+            </div>
+            <div class="instructor__badge en">
+              <span class="pulse"></span> Working in BPO today
+            </div>
+          </div>
+
+          <div class="instructor__info">
+            <p class="instructor__role en reveal">PMO Senior Analyst</p>
+            <h3 class="instructor__name en reveal" data-delay="1">Eng. Mohamed Elalfy</h3>
+            <p class="instructor__bio reveal" data-delay="2">
+              محمد شغال <span class="en">PMO Senior Analyst</span> في مجال الـ BPO، ومسؤول عن متابعة أداء المشاريع والعمليات وتحويل الداتا لتقارير وقرارات بتعتمد عليها الإدارة.
+              شغله اليومي قايم على بناء الـ KPIs والـ Dashboards، ومتابعة الـ SLAs، والتنسيق بين أقسام Operations و WFM و Quality علشان الشغل يمشي بكفاءة وبالأرقام.
+            </p>
+            <p class="instructor__bio reveal" data-delay="3">
+              في الـ Bootcamp هتتعلم منه الحاجات اللي مش موجودة في الكتب: إزاي الشركات بتفكر، والتحديات اللي بتواجهها فعلاً، والمهارات اللي بتفرق في سوق العمل. وهتقدر تسأله عن الشغل والـ Career Path بشكل مباشر.
+            </p>
+
+            <ul class="instructor__skills en reveal" data-delay="4">
+              <li>PMO &amp; Governance</li>
+              <li>KPI Frameworks</li>
+              <li>Power BI Reporting</li>
+              <li>SLA Tracking</li>
+              <li>Operations Analytics</li>
+            </ul>
+
+            <div class="instructor__points reveal" data-delay="5">
+              <div><b>خبرة فعلية</b><span>بيشتغل بالفعل في السوق، مش بيشرح نظري بس</span></div>
+              <div><b>فهم للتحديات</b><span>عارف المشاكل اللي الشركات بتواجهها يوميًا</span></div>
+              <div><b>إرشاد مهني</b><span>إجابات على أسئلتك عن الشغل والـ Career Path</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Outcomes ===== -->
+    <section class="section outcomes" id="outcomes">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="tag">المخرجات</span>
+          <h2>إيه اللي هتخرج بيه من الـ <span class="en">Bootcamp</span>؟</h2>
+          <p>مش مجرد شهادة حضور أو معلومات جديدة. دي مجموعة مخرجات عملية تساعدك تبدأ طريقك في التخصص.</p>
+        </div>
+
+        <div class="o-grid">
+          <article class="o-card reveal" data-delay="1">
+            <span class="o-card__num en">01</span>
+            <h3 class="en">Domain Knowledge</h3>
+            <p>هتفهم مجال الـ BPO وتفاصيله الداخلية والـ Business Operations الخاصة بيه.</p>
+          </article>
+          <article class="o-card reveal" data-delay="2">
+            <span class="o-card__num en">02</span>
+            <h3 class="en">Practical Experience</h3>
+            <p>هتكون اشتغلت على مشروع Data Analysis متكامل باستخدام Dataset بحجم 18 Million Rows.</p>
+          </article>
+          <article class="o-card reveal" data-delay="3">
+            <span class="o-card__num en">03</span>
+            <h3 class="en">Professional Portfolio</h3>
+            <p>هيكون عندك مشروع كبير جدًا تقدر تعرضه وتناقشه في مقابلات العمل وتضيفه للـ Portfolio بتاعك.</p>
+          </article>
+          <article class="o-card reveal" data-delay="1">
+            <span class="o-card__num en">04</span>
+            <h3 class="en">AI Skills</h3>
+            <p>هتعرف توظف أدوات الذكاء الاصطناعي في مراحل مختلفة من عملية تحليل البيانات.</p>
+          </article>
+          <article class="o-card reveal" data-delay="2">
+            <span class="o-card__num en">05</span>
+            <h3 class="en">Career Direction</h3>
+            <p>هتكون فاهم الوظائف المناسبة لتخصصك في BPO، وطبيعة كل Role، وإيه المهارات اللي محتاج تطورها.</p>
+          </article>
+          <article class="o-card reveal" data-delay="3">
+            <span class="o-card__num en">06</span>
+            <h3 class="en">Professional Community</h3>
+            <p>هتكون جزء من Community بتجمع خريجي Data Analysis، وتتبادلوا الخبرات والفرص من خلال Networking حقيقي.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Audience ===== -->
+    <section class="section audience" id="audience">
+      <div class="container audience__inner">
+        <div class="reveal">
+          <span class="tag">مين يقدر ينضم؟</span>
+          <h2>الـ <span class="en">Bootcamp</span> ده معمول ليك لو...</h2>
+          <p>الـ Bootcamp مخصص لخريجي دبلومة <span class="en">Data Analysis</span> من EraaSoft، اللي عندهم أساسيات التعامل مع البيانات وأدوات تحليلها، وعايزين ينقلوا مستواهم لمرحلة التخصص العملي.</p>
+        </div>
+        <ul class="fit-list">
+          <li class="reveal" data-delay="1"><span class="fit-ic">✓</span>خلصت الدبلومة ولسه مش عارف تبدأ في أنهي Domain</li>
+          <li class="reveal" data-delay="2"><span class="fit-ic">✓</span>محتاج تفهم طبيعة الشغل داخل الشركات</li>
+          <li class="reveal" data-delay="3"><span class="fit-ic">✓</span>عايز تبني مشروع قوي يثبت مهاراتك</li>
+          <li class="reveal" data-delay="4"><span class="fit-ic">✓</span>بتدور على تخصص مطلوب في السوق</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta" id="register">
+      <div class="container">
+        <div class="cta__box reveal">
+          <div class="cta__glow" aria-hidden="true"></div>
+          <div class="cta__text">
+            <h2 class="en">Your Next Step Starts Here!</h2>
+            <p>أنت بالفعل استثمرت وقت ومجهود في تعلم Data Analysis. دلوقتي جه الوقت تستثمر في تخصص مطلوب في السوق، وتبني مشروع يعبر عن مستواك الحقيقي.</p>
+            <p class="cta__quote en">Don't Just Learn Data Analysis. Learn How to Apply It in Business.</p>
+          </div>
+
+          <div class="price">
+            <span class="price__ribbon">مجانًا لطلاب EraaSoft</span>
+            <span class="price__label">سعر الـ <span class="en">Bootcamp</span></span>
+            <div class="price__old en"><s>3,000 EGP</s><span class="price__off">-100%</span></div>
+            <div class="price__free">
+              <b>مجانًا</b>
+              <span class="en">FREE</span>
+            </div>
+            <p class="price__for">لجميع طلاب <span class="en">EraaSoft</span></p>
+            <ul class="price__list">
+              <li>مشروع عملي على <span class="en">18M Rows</span></li>
+              <li>محاضر من قلب مجال الـ BPO</li>
+              <li>مكان في الـ Community</li>
+            </ul>
+            <a href="#register" class="btn btn--amber btn--lg price__btn" id="registerBtn" data-open-register>
+              سجل من هنا
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__logo-wrap"><img src="assets/eraasoft-logo.webp" alt="EraaSoft" class="footer__logo" /></span>
+      <p class="en">© <span id="year"></span> EraaSoft. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#register" class="sticky-cta" data-open-register>سجل في الـ Bootcamp</a>
+
+  <!-- ===== Register modal ===== -->
+  <div class="modal" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__dialog" role="document">
+      <button type="button" class="modal__close" aria-label="إغلاق" data-close-modal>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </button>
+
+      <!-- Form view -->
+      <div class="modal__view" id="modalForm">
+        <div class="modal__head">
+          <span class="tag">سجل مكانك</span>
+          <h3 id="modalTitle">انضم لـ <span class="en">BPO Data Analysis Bootcamp</span></h3>
+          <p>سيب بياناتك وفريق EraaSoft هيتواصل معاك بكل التفاصيل.</p>
+          <div class="modal__price"><s class="en">3,000 EGP</s><b>مجانًا لجميع طلاب <span class="en">EraaSoft</span></b></div>
+        </div>
+
+        <form class="form" id="registerForm" novalidate>
+          <div class="field">
+            <label for="fName">الاسم بالكامل</label>
+            <input id="fName" name="name" type="text" autocomplete="name" placeholder="مثال: أحمد محمد" required minlength="3" />
+            <small class="field__error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="fPhone">رقم الموبايل</label>
+            <input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx" dir="ltr" required />
+            <small class="field__error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="fEmail">البريد الإلكتروني</label>
+            <input id="fEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com" dir="ltr" required />
+            <small class="field__error" aria-live="polite"></small>
+          </div>
+
+          <p class="form__error" id="formError" role="alert" hidden>حصلت مشكلة في الإرسال. جرب تاني بعد شوية.</p>
+
+          <button type="submit" class="btn btn--primary btn--lg form__submit">
+            <span class="form__label">ابعت بياناتي</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+          <p class="form__note">بياناتك محفوظة ومش هتتشارك مع أي حد.</p>
+        </form>
+      </div>
+
+      <!-- Success view -->
+      <div class="modal__view modal__success" id="modalSuccess" hidden>
+        <div class="success__icon" aria-hidden="true">
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" fill="none" stroke="currentColor" stroke-width="3"/><path d="M15 27l7 7 15-15" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>تم التسجيل بنجاح!</h3>
+        <p>شكرًا <b id="successName"></b>. وصلتنا بياناتك وفريق EraaSoft هيتواصل معاك قريب.</p>
+        <button type="button" class="btn btn--ghost btn--lg" data-close-modal>تمام</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
