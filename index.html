@@ -70,8 +70,8 @@
             <span class="free-badge__ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="20" height="20"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 110-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 100-5C13 2 12 7 12 7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
-            <span>الـ <span class="en">Bootcamp</span> <b>مجاني 100%</b> لجميع طلاب <span class="en">EraaSoft</span></span>
-            <s class="en">3,000 EGP</s>
+            <span><b class="en">FREE</b> لجميع طلاب <span class="en">EraaSoft</span></span>
+            <span class="free-badge__price">السعر لغير الطلاب: <b class="en">3,000 EGP</b></span>
           </div>
 
           <ul class="hero__stats reveal" data-delay="5">
@@ -427,31 +427,32 @@
       <div class="container">
         <div class="cta__box reveal">
           <div class="cta__glow" aria-hidden="true"></div>
+          <!-- Price on top -->
+          <div class="price">
+            <span class="price__label">سعر الـ <span class="en">Bootcamp</span></span>
+            <div class="price__amount en"><b>3,000</b><span>EGP</span></div>
+            <div class="price__student">
+              <span class="price__free-tag en">FREE</span>
+              <span>لجميع طلاب <b class="en">EraaSoft</b></span>
+            </div>
+          </div>
+
           <div class="cta__text">
             <h2 class="en">Your Next Step Starts Here!</h2>
             <p>أنت بالفعل استثمرت وقت ومجهود في تعلم Data Analysis. دلوقتي جه الوقت تستثمر في تخصص مطلوب في السوق، وتبني مشروع يعبر عن مستواك الحقيقي.</p>
             <p class="cta__quote en">Don't Just Learn Data Analysis. Learn How to Apply It in Business.</p>
           </div>
 
-          <div class="price">
-            <span class="price__ribbon">مجانًا لطلاب EraaSoft</span>
-            <span class="price__label">سعر الـ <span class="en">Bootcamp</span></span>
-            <div class="price__old en"><s>3,000 EGP</s><span class="price__off">-100%</span></div>
-            <div class="price__free">
-              <b>مجانًا</b>
-              <span class="en">FREE</span>
-            </div>
-            <p class="price__for">لجميع طلاب <span class="en">EraaSoft</span></p>
-            <ul class="price__list">
-              <li>مشروع عملي على <span class="en">18M Rows</span></li>
-              <li>محاضر من قلب مجال الـ BPO</li>
-              <li>مكان في الـ Community</li>
-            </ul>
-            <a href="#register" class="btn btn--amber btn--lg price__btn" id="registerBtn" data-open-register>
-              سجل من هنا
-              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
+          <ul class="price__list">
+            <li>مشروع عملي على <span class="en">18M Rows</span></li>
+            <li>محاضر من قلب مجال الـ BPO</li>
+            <li>مكان في الـ Community</li>
+          </ul>
+
+          <a href="#register" class="btn btn--amber btn--xl price__btn" id="registerBtn" data-open-register>
+            سجل دلوقتي
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
       </div>
     </section>
@@ -480,7 +481,10 @@
           <span class="tag">سجل مكانك</span>
           <h3 id="modalTitle">انضم لـ <span class="en">BPO Data Analysis Bootcamp</span></h3>
           <p>سيب بياناتك وفريق EraaSoft هيتواصل معاك بكل التفاصيل.</p>
-          <div class="modal__price"><s class="en">3,000 EGP</s><b>مجانًا لجميع طلاب <span class="en">EraaSoft</span></b></div>
+          <div class="modal__price">
+            <span class="modal__price-amount en">3,000 EGP</span>
+            <span class="modal__price-free"><b class="en">FREE</b> لطلاب <span class="en">EraaSoft</span></span>
+          </div>
         </div>
 
         <form class="form" id="registerForm" novalidate>
