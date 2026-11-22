@@ -153,47 +153,81 @@
     }
   });
 
+  // EraaSoft student toggle
+  const studentChoice = $('#studentChoice');
+  const studentFields = $('#studentFields');
+  const isStudent = () => {
+    const checked = $('input[name="isStudent"]:checked', form);
+    return checked ? checked.value === 'yes' : null;
+  };
+  const setFieldError = (field, msg) => {
+    field.classList.toggle('has-error', !!msg);
+    $('.field__error', field).textContent = msg;
+    return !msg;
+  };
+  $$('input[name="isStudent"]', form).forEach((radio) =>
+    radio.addEventListener('change', () => {
+      const yes = isStudent() === true;
+      studentFields.hidden = !yes;
+      setFieldError(studentChoice, '');
+      if (yes) {
+        setTimeout(() => $('#fGroup').focus(), 50);
+      } else {
+        // لو غيّر رأيه نمسح الحقول ونشيل أي أخطاء
+        $$('input', studentFields).forEach((i) => { i.value = ''; setFieldError(i.closest('.field'), ''); });
+      }
+    })
+  );
+
   // Validation
   const rules = {
     name: (v) => (v.trim().length >= 3 ? '' : 'اكتب اسمك بالكامل'),
     phone: (v) => (/^(\+?20)?0?1[0125]\d{8}$/.test(v.replace(/[\s-]/g, '')) ? '' : 'اكتب رقم موبايل مصري صحيح (11 رقم)'),
     email: (v) => (/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) ? '' : 'اكتب إيميل صحيح'),
+    groupCode: (v) => (v.trim().length >= 2 ? '' : 'اكتب كود الجروب'),
+    instructorName: (v) => (v.trim().length >= 2 ? '' : 'اكتب اسم الانستراكتور'),
   };
   const validateField = (input) => {
-    const msg = rules[input.name](input.value);
-    const field = input.closest('.field');
-    field.classList.toggle('has-error', !!msg);
-    $('.field__error', field).textContent = msg;
-    input.setAttribute('aria-invalid', String(!!msg));
-    return !msg;
+    const ok = setFieldError(input.closest('.field'), rules[input.name](input.value));
+    input.setAttribute('aria-invalid', String(!ok));
+    return ok;
   };
-  $$('input', form).forEach((input) => {
+  // الحقول النصية اللي ظاهرة بس (حقول الطالب بتتشال لما تكون مخفية)
+  const textInputs = () =>
+    $$('.field input:not([type="radio"])', form).filter((i) => !i.closest('[hidden]'));
+
+  $$('.field input:not([type="radio"])', form).forEach((input) => {
     input.addEventListener('blur', () => { if (input.value) validateField(input); });
     input.addEventListener('input', () => {
       if (input.closest('.field').classList.contains('has-error')) validateField(input);
     });
   });
 
+  const shake = (el) => { el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); };
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     formError.hidden = true;
 
-    const inputs = $$('input', form);
-    const invalid = inputs.filter((i) => !validateField(i));
+    const invalid = textInputs().filter((i) => !validateField(i));
+    const choiceOk = setFieldError(studentChoice, isStudent() === null ? 'اختار إجابة' : '');
+    if (!choiceOk) invalid.push($('input[name="isStudent"]', form));
+
     if (invalid.length) {
-      invalid.forEach((i) => {
-        const f = i.closest('.field');
-        f.classList.remove('shake'); void f.offsetWidth; f.classList.add('shake');
-      });
+      invalid.forEach((i) => shake(i.closest('.field')));
       invalid[0].focus();
       return;
     }
 
     const fields = form.elements;
+    const student = isStudent();
     const data = {
       name: fields.namedItem('name').value.trim(),
       phone: fields.namedItem('phone').value.replace(/[\s-]/g, ''),
       email: fields.namedItem('email').value.trim(),
+      isEraaSoftStudent: student,
+      groupCode: student ? fields.namedItem('groupCode').value.trim() : null,
+      instructorName: student ? fields.namedItem('instructorName').value.trim() : null,
       source: 'BPO Data Analysis Bootcamp',
     };
 
@@ -215,6 +249,7 @@
       formView.hidden = true;
       successView.hidden = false;
       form.reset();
+      studentFields.hidden = true;
       $$('.field', form).forEach((f) => f.classList.remove('has-error'));
     } catch (err) {
       console.error(err);

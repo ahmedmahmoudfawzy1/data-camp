@@ -676,6 +676,44 @@ body.modal-open { overflow: hidden; }
 .field.has-error input:focus { box-shadow: 0 0 0 4px rgba(229, 72, 77, .15); }
 .field__error { min-height: 0; font-size: 13px; color: #d13438; }
 .field__error:empty { display: none; }
+
+/* EraaSoft student question */
+.field--choice { display: block; border: 0; margin: 0; padding: 0; min-width: 0; }
+.field--choice legend { padding: 0; margin-bottom: 8px; font-size: 15px; font-weight: 600; color: var(--ink); }
+.field--choice .field__error { display: block; margin-top: 6px; }
+.field--choice .field__error:empty { display: none; }
+.choice { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.choice__opt { position: relative; cursor: pointer; }
+.choice__opt input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.choice__opt span {
+  display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px;
+  padding: 10px 14px; border-radius: 12px; font-weight: 600; font-size: 15px; text-align: center;
+  border: 1.5px solid var(--line); background: var(--bg); color: var(--ink-2);
+  transition: border-color .2s, background .2s, color .2s, box-shadow .2s;
+}
+.choice__opt span::before {
+  content: ""; flex: none; width: 18px; height: 18px; border-radius: 50%;
+  border: 2px solid #b8c3d6; background: #fff; transition: border .2s, box-shadow .2s;
+}
+.choice__opt:hover span { border-color: #b9cdee; }
+.choice__opt input:checked + span {
+  border-color: var(--blue-500); background: var(--blue-50); color: var(--blue-600);
+}
+.choice__opt input:checked + span::before { border: 5px solid var(--blue-500); }
+.choice__opt input:focus-visible + span { box-shadow: 0 0 0 4px rgba(47, 127, 245, .18); }
+.field--choice.has-error .choice__opt span { border-color: #e5484d; background: #fff6f6; }
+
+.student-fields {
+  display: grid; gap: 16px; padding: 16px; border-radius: 14px;
+  background: #f1fbf6; border: 1px dashed #9fdfbf;
+  animation: slideDown .35s var(--ease);
+}
+.student-fields[hidden] { display: none; }
+.student-fields__note { margin: 0; font-size: 14px; color: #2b6b50; }
+.student-fields__note b { color: #0f8a5f; }
+.student-fields .field input { background: #fff; }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+
 .form__error { margin: 0; padding: 10px 14px; border-radius: 10px; background: #fff0f0; color: #c4262b; font-size: 14px; }
 .form__submit { width: 100%; margin-top: 4px; }
 .form__note { margin: 0; text-align: center; font-size: 13px; color: var(--ink-3); }

@@ -506,6 +506,35 @@
             <small class="field__error" aria-live="polite"></small>
           </div>
 
+          <fieldset class="field field--choice" id="studentChoice">
+            <legend>انت طالب في <span class="en">EraaSoft</span>؟</legend>
+            <div class="choice">
+              <label class="choice__opt">
+                <input type="radio" name="isStudent" value="yes" />
+                <span>أيوه، أنا طالب</span>
+              </label>
+              <label class="choice__opt">
+                <input type="radio" name="isStudent" value="no" />
+                <span>لأ</span>
+              </label>
+            </div>
+            <small class="field__error" aria-live="polite"></small>
+          </fieldset>
+
+          <div class="student-fields" id="studentFields" hidden>
+            <p class="student-fields__note">الـ Bootcamp <b class="en">FREE</b> لطلاب EraaSoft. اكتب بيانات الجروب بتاعك علشان نأكد اشتراكك.</p>
+            <div class="field">
+              <label for="fGroup">كود الجروب</label>
+              <input id="fGroup" name="groupCode" type="text" placeholder="C-01" dir="ltr" autocomplete="off" />
+              <small class="field__error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="fInstructor">اسم الانستراكتور</label>
+              <input id="fInstructor" name="instructorName" type="text" placeholder="اسم الانستراكتور اللي درّسك" autocomplete="off" />
+              <small class="field__error" aria-live="polite"></small>
+            </div>
+          </div>
+
           <p class="form__error" id="formError" role="alert" hidden>حصلت مشكلة في الإرسال. جرب تاني بعد شوية.</p>
 
           <button type="submit" class="btn btn--primary btn--lg form__submit">
